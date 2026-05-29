@@ -1,0 +1,339 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Landing Page</title>
+
+  <!--Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER / NAVBAR
+  ========================== -->
+  <header class="main-header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        
+        <!-- Logo -->
+        <a class="navbar-brand logo" href="#">
+          LOGO
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation -->
+        <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+          <ul class="navbar-nav gap-lg-4">
+            <li class="nav-item">
+              <a class="nav-link nav-hover" href="#">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav-hover" href="#">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav-hover" href="#">Services</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav-hover" href="#">Clients</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav-hover" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- =========================
+       HERO SECTION
+  ========================== -->
+  <section class="hero-section">
+    <div class="hero-overlay"></div>
+
+    <div class="container position-relative">
+      <div class="row align-items-center min-vh-75">
+
+        <div class="col-lg-6">
+          <div class="hero-content">
+            <h1>Your Main Headline Goes Here</h1>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+
+            <a href="#" class="btn btn-primary hero-btn">
+              Learn More
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================
+       TWO COLUMN TEXT SECTION
+  ========================== -->
+  <section class="two-column-section">
+    <div class="container">
+      <div class="row g-5">
+
+        <div class="col-lg-6">
+          <h2>Column One</h2>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Integer posuere erat a ante.
+          </p>
+
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse.
+          </p>
+        </div>
+
+        <div class="col-lg-6">
+          <h2>Column Two</h2>
+
+          <p>
+            Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim.
+          </p>
+
+          <p>
+            Curabitur blandit tempus porttitor.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================
+       SERVICES SECTION
+  ========================== -->
+  <section class="services-section">
+    <div class="container">
+
+      <div class="section-heading text-center">
+        <h2>Our Services</h2>
+      </div>
+
+      <div class="row g-4">
+
+        <!-- Service Item -->
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card text-center">
+            <i class="fa-solid fa-chart-line"></i>
+            <h4>Service One</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card text-center">
+            <i class="fa-solid fa-globe"></i>
+            <h4>Service Two</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card text-center">
+            <i class="fa-solid fa-briefcase"></i>
+            <h4>Service Three</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card text-center">
+            <i class="fa-solid fa-users"></i>
+            <h4>Service Four</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card text-center">
+            <i class="fa-solid fa-gears"></i>
+            <h4>Service Five</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card text-center">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h4>Service Six</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================
+       CLIENTS SECTION
+  ========================== -->
+  <section class="clients-section">
+    <div class="container">
+
+      <div class="section-heading text-center">
+        <h2>Who We Work With</h2>
+      </div>
+
+      <div class="row text-center g-4 justify-content-center">
+
+        <div class="col-6 col-md-4 col-lg">
+          <div class="client-item">
+            <i class="fa-solid fa-building"></i>
+            <p>Client One</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg">
+          <div class="client-item">
+            <i class="fa-solid fa-hospital"></i>
+            <p>Client Two</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg">
+          <div class="client-item">
+            <i class="fa-solid fa-school"></i>
+            <p>Client Three</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg">
+          <div class="client-item">
+            <i class="fa-solid fa-industry"></i>
+            <p>Client Four</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg">
+          <div class="client-item">
+            <i class="fa-solid fa-store"></i>
+            <p>Client Five</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg">
+          <div class="client-item">
+            <i class="fa-solid fa-landmark"></i>
+            <p>Client Six</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg">
+          <div class="client-item">
+            <i class="fa-solid fa-handshake"></i>
+            <p>Client Seven</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================
+       CONTACT SECTION
+  ========================== -->
+  <section class="contact-section">
+    <div class="container">
+
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="contact-box">
+            <h4>Address</h4>
+            <p>
+              123 Main Street<br />
+              Cape Town<br />
+              South Africa
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="contact-box">
+            <h4>Email</h4>
+            <p>info@example.com</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="contact-box">
+            <h4>Phone</h4>
+            <p>+27 00 000 0000</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="main-footer">
+    <div class="container text-center">
+      <p>
+        &copy; 2026 Your Company Name. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
