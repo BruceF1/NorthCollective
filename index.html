@@ -35,12 +35,13 @@
        HEADER / NAVBAR
   ========================== -->
   <header class="main-header">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid header-container">
+      <nav class="navbar navbar-expand-lg w-100">
         
         <!-- Logo -->
         <a class="navbar-brand logo" href="#">
-          <img src="src/weblogo.png" alt="Logo" width="auto" height="55">
+          <img class="site-logo" src="src/NC-landscapelogo.svg" alt="North Collective Logo">
+          <img class="logo-mobile" src="src/NC-landscapelogomobile.svg" alt="North Collective">
       </a>
 
         <!-- Mobile Toggle -->
@@ -54,12 +55,8 @@
         </button>
 
         <!-- Navigation -->
-        <div class="collapse navbar-collapse justify-content-end" id="mainNav">
-          <ul class="navbar-nav gap-lg-4">
-            <li class="nav-item">
-              <a class="nav-link nav-hover" href="#">HOME</a>
-            </li>
-
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto gap-lg-4">
             <li class="nav-item">
               <a class="nav-link nav-hover" href="#">ABOUT</a>
             </li>
@@ -77,7 +74,7 @@
             </li>
             
             <li class="nav-item">
-                <a class="nav-link nav-hover" href="#">CONTACT</a>
+                <a class="nav-link nav-contact-btn" href="#">CONTACT US</a>
               </li>
           </ul>
         </div>
@@ -93,22 +90,26 @@
   <section class="hero-section">
     <div class="hero-overlay"></div>
 
-    <div class="container position-relative">
+    <div class="container-fluid hero-container position-relative">
       <div class="row align-items-center min-vh-75">
 
-        <div class="col-lg-6">
+        <div class="col-lg-7 col-xl-6">
           <div class="hero-content">
             <h2>PROCUREMENT SOLUTIONS FOR COMMERCIAL PROJECTS & HOSPITALITY</h2>
-
-            <p>From procurement and estimating to supplier representation and project support, North Collective helps owners, developers, operators, designers, and contractors source, manage, and deliver successful projects.</p>
-            <p>SOURCE • BUILD • GROW</p>
-
-            <a href="#" class="hero-btn-1">
-              CONTACT US
-            </a>
+            <h4 class ="bronze-text">From procurement and estimating to supplier representation and project support, North Collective helps owners, developers, operators, designers, and contractors source, manage, and deliver successful projects.</h4>
+            <h4 class="pt-2">
+              SOURCE <span class="bronze-text">•</span>
+              BUILD <span class="bronze-text">•</span>
+              GROW
+            </h4>
             <!-- <a href="#" class="hero-btn-2">
                 OUR SERVICES
               </a> -->
+          </div>
+          <div class="px-4">
+           <a href="#" class="hero-btn-1">
+              CONTACT US
+          </a>
           </div>
         </div>
 
@@ -121,15 +122,17 @@
        TWO COLUMN TEXT SECTION
   ========================== -->
   <section class="two-column-section">
-    <div class="container">
+    <div class="container-fluid hero-container position-relative">
       <div class="row g-5">
 
-        <div class="col-lg-6">
-            <p class = "bronze-text">
+        <div class="col-lg-7 col-xl-6">
+          <div class ="about-content">
+            <h5 class = "bronze-text">
                 ABOUT NORTH COLLECTIVE
-              </p>
+            </h5>
 
-          <h2 class="text-white">Built Through Relationships</h2>
+          <h2 class="text-white">BUILT ON EXPERIENCE.</h2>
+          <h2 class="text-white">DRIVEN BY RELATIONSHIPS.</h2>
 
           <p class="text-white">
             North Collective offers procurement services for projects in the hospitality and commercial industry. Beyond estimating and procuring, we also offer project support and supplier representation through our various partnerships.          </p>
@@ -140,9 +143,10 @@
           <p class="text-white">
             With decades of combined industry experience, our team helps owners, developers, operators, designers, and contractors make better decisions, reduce risk, and improve project outcomes.</p>
 
-          <a href="#" class="hero-btn-3">
-            LEARN MORE ABOUT US
-          </a>
+              <a href="#" class="hero-btn-1">
+                 CONTACT US
+             </a>
+        </div>
         </div>
 
         <div class="col-lg-6 about-summary">
@@ -167,11 +171,11 @@
 <!-- =========================
        REASONINGS SECTION
   ========================== -->
-  <section class="REASONINGS-section">
-    <div class="container">
+  <section class="reasonings-section">
+    <div class="px-5">
 
       <div class="section-heading text-center">
-        <p class = "bronze-text">WHY NORTH COLLECTIVE</p>
+        <h5 class = "bronze-text">WHY NORTH COLLECTIVE</h5>
         <h2>EXPERTISE THAT DELIVERS</h2>
       </div>
 
@@ -180,38 +184,38 @@
         <div class="REASONINGS-row">
 
             <div class="reason-item">
-              <i class="fa-solid fa-people-group"></i>
-              <h4 class="bronze-text">Experienced Team</h4>
+              <i class="bronze-text fa-solid fa-people-group"></i>
+              <h4 class="text-black">Experienced Team</h4>
               <p>Decades of combined commercial project experience.</p>
             </div>
           
             <div class="reason-item">
-              <i class="fa-solid fa-people-arrows"></i>
-              <h4 class="bronze-text">Trusted Partners</h4>
+              <i class="bronze-text fa-solid fa-people-arrows"></i>
+              <h4 class="text-black">Trusted Partners</h4>
               <p>Strong relationships with quality manufacturers and suppliers</p>
             </div>
           
             <div class="reason-item">
-              <i class="fa-solid fa-chart-line"></i>
-              <h4 class="bronze-text">Strategic Solutions</h4>
+              <i class="bronze-text fa-solid fa-chart-line"></i>
+              <h4 class="text-black">Strategic Solutions</h4>
               <p>Procurement, estimating, and project support tailored to project objectives.</p>
             </div>
           
             <div class="reason-item">
-              <i class="fa-solid fa-trophy"></i>
-              <h4 class="bronze-text">Owner Focused </h4>
+              <i class="bronze-text fa-solid fa-trophy"></i>
+              <h4 class="text-black">Owner Focused </h4>
               <p>Solutions designed around budget, schedule, and operational goals.</p>
             </div>
           
             <div class="reason-item">
-              <i class="fa-brands fa-canadian-maple-leaf"></i>
-              <h4 class="bronze-text">Western Canada Based</h4>
+              <i class="bronze-text  fa-brands fa-canadian-maple-leaf"></i>
+              <h4 class="text-black">Western Canada Based</h4>
               <p>Local knowledge with national supplier reach.</p>
             </div>
           
             <div class="reason-item">
-              <i class="fa-solid fa-phone-volume"></i>
-              <h4 class="bronze-text">End-to-End Support </h4>
+              <i class="bronze-text fa-solid fa-phone-volume"></i>
+              <h4 class="text-black">End-to-End Support </h4>
               <p>From planning and budgeting through project completion.</p>
             </div>        
           </div>
@@ -220,15 +224,14 @@
     </div>
   </section>
 
-
  <!-- =========================
      SERVICES SECTION
 ========================== -->
 <section class="service-section">
-  <div class="container">
+  <div class="px-5">
 
     <div class="section-heading text-center">
-      <p class="bronze-text">OUR SERVICES</p>
+      <h5 class="bronze-text">OUR SERVICES</h5>
       <h2 class="text-white">BEYOND PROCUREMENT</h2>
     </div>
 
@@ -237,21 +240,120 @@
       <div class="col-6 col-md-4 client-col">
         <div class="service-item">
           <div class="service-image">
-            <img src="src/procurement1.jpg" alt="Procurement and purchasing">
+            <!-- <img src="src/procurement1.jpg" alt="Procurement and purchasing"> -->
           </div>
-          <h4 class="bronze-text">PROCUREMENT & PURCHASING</h4>
-          <p>Strategic sourcing, procurement management, tendering, vendor negotiations, logistics coordination, and purchasing support.</p>
+          <div class="service-icon">
+            <i class="fa-solid fa-people-group"></i>
+          </div>
+          <h4 class="bronze-text">
+            PROCUREMENT
+          </h4>
+          <p class="text-white">
+            Strategic sourcing, procurement management,
+            tendering and purchasing support.
+          </p>
         </div>
       </div>
 
+      <div class="col-6 col-md-4 client-col">
+        <div class="service-item">
+          <div class="service-image">
+            <!-- <img src="src/procurement1.jpg" alt="Procurement and purchasing"> -->
+          </div>
+          <div class="service-icon">
+            <i class="fa-solid fa-people-group"></i>
+          </div>
+          <h4 class="bronze-text">
+            PROCUREMENT
+          </h4>
+          <p class="text-white">
+            Strategic sourcing, procurement management,
+            tendering and purchasing support.
+          </p>
+        </div>
+      </div>
 
       <div class="col-6 col-md-4 client-col">
+        <div class="service-item">
+          <div class="service-image">
+            <!-- <img src="src/procurement1.jpg" alt="Procurement and purchasing"> -->
+          </div>
+          <div class="service-icon">
+            <i class="fa-solid fa-people-group"></i>
+          </div>
+          <h4 class="bronze-text">
+            PROCUREMENT
+          </h4>
+          <p class="text-white">
+            Strategic sourcing, procurement management,
+            tendering and purchasing support.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 client-col">
+        <div class="service-item">
+          <div class="service-image">
+            <!-- <img src="src/procurement1.jpg" alt="Procurement and purchasing"> -->
+          </div>
+          <div class="service-icon">
+            <i class="fa-solid fa-people-group"></i>
+          </div>
+          <h4 class="bronze-text">
+            PROCUREMENT
+          </h4>
+          <p class="text-white">
+            Strategic sourcing, procurement management,
+            tendering and purchasing support.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 client-col">
+        <div class="service-item">
+          <div class="service-image">
+            <!-- <img src="src/procurement1.jpg" alt="Procurement and purchasing"> -->
+          </div>
+          <div class="service-icon">
+            <i class="fa-solid fa-people-group"></i>
+          </div>
+          <h4 class="bronze-text">
+            PROCUREMENT
+          </h4>
+          <p class="text-white">
+            Strategic sourcing, procurement management,
+            tendering and purchasing support.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 client-col">
+        <div class="service-item">
+          <div class="service-image">
+            <!-- <img src="src/procurement1.jpg" alt="Procurement and purchasing"> -->
+          </div>
+          <div class="service-icon">
+            <i class="fa-solid fa-people-group"></i>
+          </div>
+          <h4 class="bronze-text">
+            PROCUREMENT
+          </h4>
+          <p class="text-white">
+            Strategic sourcing, procurement management,
+            tendering and purchasing support.
+          </p>
+        </div>
+      </div>
+      
+
+
+      <!-- <div class="col-6 col-md-4 client-col">
         <div class="service-item">
           <div class="service-image">
             <img src="src/connecting.jpg" alt="Supplier representation">
           </div>
           <h4 class="bronze-text">SUPPLIER REPRESENTATION</h4>
-          <p>Connecting clients with trusted manufacturers and product solutions through a single point of contact.</p>
+          <p class="text-white">Connecting clients with trusted manufacturers and product solutions through a single point of contact.</p>
         </div>
       </div>
 
@@ -262,7 +364,7 @@
             <img src="src/estimating.jpg" alt="Estimating and budgeting">
           </div>
           <h4 class="bronze-text">ESTIMATING & BUDGETING</h4>
-          <p>Cost planning, budgeting, procurement forecasting, scope review, and value engineering.</p>
+          <p class="text-white">Cost planning, budgeting, procurement forecasting, scope review, and value engineering.</p>
         </div>
       </div>
 
@@ -273,7 +375,7 @@
             <img src="src/project-support.jpg" alt="Project support services">
           </div>
           <h4 class="bronze-text">PROJECT SUPPORT SERVICES</h4>
-          <p>Procurement oversight, vendor management, schedule coordination, site support, and project administration.</p>
+          <p class="text-white">Procurement oversight, vendor management, schedule coordination, site support, and project administration.</p>
         </div>
       </div>
 
@@ -284,7 +386,7 @@
             <img src="src/advisory.jpg" alt="Owner advisory services">
           </div>
           <h4 class="bronze-text">OWNER & DEVELOPMENT ADVISORY</h4>
-          <p>Guidance and support from project planning through completion.</p>
+          <p class="text-white">Guidance and support from project planning through completion.</p>
         </div>
       </div>
 
@@ -295,12 +397,150 @@
             <img src="src/partnerships.jpg" alt="Strategic partnerships">
           </div>
           <h4 class="bronze-text">STRATEGIC PARTNERSHIPS</h4>
-          <p>Connecting clients with trusted resources including design, architecture, project management, and specialty consultants.</p>
+          <p class="text-white">Connecting clients with trusted resources including design, architecture, project management, and specialty consultants.</p>
+        </div>
+      </div>
+ -->
+
+    </div>
+  </div>
+</section>
+
+ <!-- =========================
+     PRODUCT CATEGORIES
+========================== -->
+<section class="product-categories-section">
+
+  <div class="px-5">
+
+    <div class="section-heading text-center">
+      <h5 class="bronze-text">PRODUCT CATEGORIES</h5>
+
+      <h2>
+        PRODUCTS & FINISH SOLUTIONS
+      </h2>
+
+      <p class="section-intro">
+        Through our supplier network and strategic partnerships,
+        North Collective provides access to a broad range of
+        commercial products and finish solutions.
+      </p>
+    </div>
+
+    <div class="row g-3">
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="category-tile">
+          <img src="src/lighting.jpg">
+          <div class="category-overlay">
+            <h5>Lighting</h5>
+          </div>
         </div>
       </div>
 
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="category-tile">
+          <img src="src/casegoods.jpg" >
+          <div class="category-overlay">
+            <h5>Casegoods</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="category-tile">
+          <img src="src/seating.jpg" >
+          <div class="category-overlay">
+            <h5>Seating</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="category-tile">
+          <img src="src/millwork.jpg" >
+          <div class="category-overlay">
+            <h5>Millwork</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="category-tile">
+          <img src="src/artwork.jpg" >
+          <div class="category-overlay">
+            <h5>Artwork</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="category-tile">
+          <img src="src/wallcoverings.jpg" >
+          <div class="category-overlay">
+            <h5>Wall Coverings</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="category-tile">
+          <img src="src/flooring.jpg" >
+          <div class="category-overlay">
+            <h5>Flooring</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="category-tile">
+          <img src="src/glass.jpg" >
+          <div class="category-overlay">
+            <h5>Glass Detailing</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="category-tile">
+          <img src="src/stone.jpg" >
+          <div class="category-overlay">
+            <h5>Stone & Surfaces</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="category-tile">
+          <img src="src/architectural.jpg" >
+          <div class="category-overlay">
+            <h5>Architectural Products</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="category-tile">
+          <img src="src/decorative.jpg" >
+          <div class="category-overlay">
+            <h5>Decorative Materials</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2">
+        <div class="category-tile">
+          <img src="src/specialty.jpg" >
+          <div class="category-overlay">
+            <h5>Specialty Construction</h5>
+          </div>
+        </div>
+      </div>
 
     </div>
+
   </div>
 </section>
 
@@ -308,7 +548,7 @@
        CONTACT SECTION
   ========================== -->
   <section class="contact-section">
-    <div class="container">
+    <div class="px-5">
 
       <div class="row g-4">
 
@@ -359,10 +599,10 @@ Source. Build. Grow.
        FOOTER
   ========================== -->
   <footer class="main-footer">
-    <div class="container text-center">
-      <p>
+    <div class="px-5 text-center">
+      <h5>
         &copy; 2026 North Collective. All Rights Reserved.
-      </p>
+      </h5>
     </div>
   </footer>
 
