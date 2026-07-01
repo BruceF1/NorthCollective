@@ -22,6 +22,10 @@ a {
     text-decoration: none;
 }
 
+p {
+	line-height:1.2 ;
+}
+
 h2 {
 	font-size:3rem;
 	font-weight:500;
@@ -78,21 +82,25 @@ h4 {
 /* =========================HERO SECTION========================= */
 .hero-section {
 	position: relative;
-	background-color: var(--primary-bg);
-	/* background-image: url('src/newhero2.jpg');
-	*/
+	/* background-color: var(--primary-bg); */
+	background-image: url('src/reception2.jpg');
+	
 	background-size: cover;
 	background-position: center;
 	min-height: 750px;
 	display: flex;
 	align-items: center;
 }
-/* .hero-overlay {
+ .hero-overlay {
 	position: absolute;
 	inset: 0;
-	background: rgba(0, 0, 0, 0.45);
+background: linear-gradient(
+		to right,
+		rgba(0,0,0,1) 0%,
+		rgba(0,0,0,0) 100%
+	);
 }
-*/
+
 .min-vh-75 {
 	min-height: 75vh;
 }
@@ -106,12 +114,12 @@ h4 {
 }
 .hero-content h2 {
 	font-size: clamp(2rem, 5vw, 4rem);
-	line-height: 1.1;
+	line-height: 0.9;
 	margin-bottom: 25px;
 }
 .hero-content h4 {
 	font-size: clamp(1rem, 2vw, 1.3rem);
-	line-height: 1.5;
+	line-height: 1.1;
 }
 /* BUTTON BASE */
 .hero-btn-1,.hero-btn-2,.hero-btn-3 {
@@ -152,13 +160,13 @@ h4 {
 }
 .about-content h2 {
 	font-size: clamp(2rem, 4vw, 3rem);
-	line-height:1.1;
+	line-height:0.5;
 	margin-bottom: 15px;
 }
 .about-summary {
 	position: relative;
-	/* background-image: url('src/seatingarea.jpg');
-	*/
+	background-image: url('src/meetingimage.jpg');
+	
 	background-color: gray;
 	background-size: cover;
 	background-position: center;
