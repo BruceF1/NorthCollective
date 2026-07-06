@@ -275,7 +275,7 @@ display: inline-block;
 	margin-top: 40px;
 }
 
-/* =========================TNEW REASONINGS SECTION========================= */
+/* =========================NEW REASONINGS SECTION========================= */
 .new-reasoning-section {
 	background: var(--white);
 	color: var(--charcoal);
@@ -302,6 +302,10 @@ display: inline-block;
 /* ==========================================
    WHY NORTH COLLECTIVE
 ========================================== */
+.narrow-column{
+	max-width:600px;
+}
+
 
 .new-reasoning-section{
     background: var(--secondary-bg);
