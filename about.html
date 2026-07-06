@@ -1,308 +1,287 @@
 <!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>North Collective - About</title>
-
-  <!--Fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>North Collective</title>
+      <!--Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+      
+      <!-- Bootstrap -->
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+      />
+      <!-- Font Awesome -->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      />
+      <!-- Favicon-->
+      <link rel="icon" type="image/svg+xml" href="src/favicon.svg" />
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <!-- =========================
+         HEADER / NAVBAR
+         ========================== -->
+      <header class="alt-header">
+         <div class="container-fluid header-container">
+            <nav class="navbar navbar-expand-lg w-100-dark">
+               <!-- Logo -->
+               <a class="navbar-brand logo" href="index.html">
+                  <img
+                     class="site-logo"
+                     src="src/NC-landscapelogowhite.svg"
+                     alt="North Collective Logo"
+                  />
+                  <img
+                     class="logo-mobile"
+                     src="src/NC-landscapelogomobile.svg"
+                     alt="North Collective"
+                  />
+               </a>
+               <!-- Mobile Toggle -->
+               <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#mainNav"
+               >
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <!-- Navigation -->
+               <div class="collapse navbar-collapse" id="mainNav">
+                  <ul class="navbar-nav ms-auto gap-lg-4">
+                     <li class="nav-item">
+                        <a class="nav-link nav-hover text-white" href="about.html"
+                           >ABOUT</a
+                        >
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link nav-hover text-white" href="services.html"
+                           >SERVICES</a
+                        >
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link nav-hover text-white" href="industries.html"
+                           >INDUSTRIES</a
+                        >
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link nav-hover text-white" href="supplier.html"
+                           >SUPPLIER PARTNERSHIPS</a
+                        >
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link nav-contact-btn" href="contact.html"
+                           >CONTACT US</a
+                        >
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </header>
+<!-- =========================
+         TWO COLUMN TEXT SECTION
+         ========================== -->
+<section class="two-column-section about-page-padding">
+<div class="container-fluid hero-container position-relative">
 
+    <div class="row ">
 
-  <!-- Bootstrap -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
+        <!-- Left Column -->
+        <div class="col-lg-4 mb-5 mb-lg-0 borderline-right">
 
-  <!-- Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-  />
-
-  <!-- Favicon-->
-  <link rel="icon" type="image/svg+xml" href="src/favicon.svg">
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-
-  <!-- =========================
-       HEADER / NAVBAR
-  ========================== -->
-  <header class="main-header">
-    <div class="container-fluid header-container">
-      <nav class="navbar navbar-expand-lg w-100">
-        
-        <!-- Logo -->
-        <a class="navbar-brand logo" href="#">
-          <img class="site-logo" src="src/NC-landscapelogo.svg" alt="North Collective Logo">
-          <img class="logo-mobile" src="src/NC-landscapelogomobile.svg" alt="North Collective">
-      </a>
-
-        <!-- Mobile Toggle -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navigation -->
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto gap-lg-4">
-            <li class="nav-item">
-              <a class="nav-link nav-hover" href="about.html">ABOUT</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link nav-hover" href="services.html">SERVICES</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link nav-hover" href="industries.html">INDUSTRIES</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link nav-hover" href="supplier.html">SUPPLIER PARTNERSHIPS</a>
-            </li>
-            
-            <li class="nav-item">
-                <a class="nav-link nav-contact-btn" href="contact.html">CONTACT US</a>
-              </li>
-          </ul>
-        </div>
-
-      </nav>
-    </div>
-  </header>
-
-
-  <!-- =========================
-       HERO SECTION
-  ========================== -->
-  <section class="hero-section">
-    <div class="hero-overlay"></div>
-
-    <div class="container-fluid hero-container position-relative">
-      <div class="row align-items-center min-vh-75">
-
-        <div class="col-lg-7 col-xl-6">
-          <div class="hero-content">
-            <h2>A DIFFERENT APPROACH TO PROJECT DELIVERY</h2>
-            <h4 class ="bronze-text">North Collective was created around a simple belief:
-              Successful projects require more than products.
-              They require the right relationships, the right strategy, and the right execution.
-              Our role is to help clients source smarter, build better, and grow stronger by providing access to trusted suppliers, experienced project resources, and practical solutions that create long-term value.
-              </h4>
-            <h4 class="pt-2">
-              SOURCE <span class="bronze-text">•</span>
-              BUILD <span class="bronze-text">•</span>
-              GROW
-            </h4>
-            <!-- <a href="#" class="hero-btn-2">
-                OUR SERVICES
-              </a> -->
-          </div>
-          <div class="px-4">
-           <a href="#" class="hero-btn-1">
-              CONTACT US
-          </a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- =========================
-       TWO COLUMN TEXT SECTION
-  ========================== -->
-  <section class="two-column-section">
-    <div class="container-fluid hero-container position-relative">
-      <div class="row g-5">
-
-        <div class="col-lg-7 col-xl-6">
-          <div class ="about-content">
-            <h5 class = "bronze-text">
+            <h5 class="bronze-text">
                 ABOUT NORTH COLLECTIVE
             </h5>
 
-          <h2 class="text-white">TRANSPARENT PROCUREMENT.</h2>
-          <h2 class="text-white">TRUSTED PARTNERSHIPS.</h2>
-
-          <p class="text-white">
-            At North Collective, we believe successful projects are built on trust, transparency, and long-term relationships.
-            </p>
-            <p class=" text-white">
-              We work collaboratively with a carefully selected network of preferred vendors and manufacturing partners, allowing us to deliver value-driven solutions while maintaining flexibility and objectivity.          </p>
-            </p>
-              <p class="text-white">
-            Integrity is at the core of everything we do.
-            </p>
-            <p class="text-white">
-              We believe clients deserve clear communication, transparent pricing structures, and honest recommendations that support the best interests of their project
-              </p>
-              <p class="text-white">
-                Because great partnerships are built on trust.
-              </p>
-
-              <a href="#" class="hero-btn-1">
-                 CONTACT US
-             </a>
-        </div>
-        </div>
-
-        <div class="col-lg-6 about-summary">
-          <!-- <h2>Column Two</h2>
-
-          <p>
-            Excepteur sint occaecat cupidatat non proident,
-            sunt in culpa qui officia deserunt mollit anim.
-          </p>
-
-          <p>
-            Curabitur blandit tempus porttitor.
-          </p>
-        </div> -->
-
-
-      </div>
-    </div>
-  </section>
-
-     
-<!-- =========================
-       TWO COLUMN ABOUT SECTION
-  ========================== -->
-<section class="two-column-section">
-	<div class="container-fluid hero-container position-relative">
-		<div class="row g-5">
-			<div class="col-lg-7 col-xl-6">
-				<div class ="about-content">
-					<h5 class = "bronze-text">
-                Leadership Team
-            </h5>
-					<h2 class="text-white">LEITH MACROBERT</h2>
-					<p class="text-white">
-            Leith MacRobert is a commercial procurement and business development professional with more than a decade of experience serving the hospitality, restaurant, retirement living, and commercial development sectors across Canada.</p>
-					<p>Throughout his career, Leith has built strong relationships with hotel ownership groups, developers, operators, designers, contractors, and industry partners while supporting a wide range of hospitality and commercial projects. His experience includes working with major hospitality brands such as Hilton, IHG as well as collaborating with leading development groups including Pacific Reach, Northland Properties, Cactus Club & Joeys.</p>
-					<p>His expertise spans procurement management, estimating, supplier sourcing, value engineering, project support, strategic partnerships, and hotel brand standard compliance. Known for his collaborative approach and extensive industry network, Leith helps clients navigate complex projects while delivering practical, cost-effective solutions that create long-term value.</p>
-					<p>At North Collective, Leith leads business development, strategic partnerships, procurement initiatives, and client growth strategies, helping clients successfully.</p>
-					<a href="mailto:leith@northcollective.ca" class="hero-btn-1">
-                 CONTACT LEITH
-             </a>
-				</div>
-			</div>
-      <div class="col-lg-7 col-xl-6">
-				<div class ="about-content">
-        </br>
-					<h2 class="text-white">SARA PHILLIPS</h2>
-					<p class="text-white">
-            Sara Phillips brings over a decade of experience serving the commercial and hospitality industry. She specializes in procurement, sourcing, and vendor management for furnishings and finishes. Throughout her career, she has built strong relationships with suppliers, manufacturers, and project teams, helping to deliver successful projects of all sizes.					<p>Throughout his career, Leith has built strong relationships with hotel ownership groups, developers, operators, designers, contractors, and industry partners while supporting a wide range of hospitality and commercial projects. His experience includes working with major hospitality brands such as Hilton, IHG as well as collaborating with leading development groups including Pacific Reach, Northland Properties, Cactus Club & Joeys.</p>
-					<p>With extensive knowledge of furniture, flooring, millwork, and interior finishes, Sara excels at identifying strategic sourcing opportunities, negotiating competitive pricing, and coordinating complex procurement processes from specification through delivery. Her attention to detail, proactive communication style, and ability to anticipate challenges ensure projects remain on schedule and within budget.</p>
-					<p>At North Collective, Sara oversees operations, ensuring projects run smoothly from concept through completion. Sara brings a passion for creating exceptional spaces to the industry. Her collaborative approach with her clients has them engaged throughout the process and confident in successful project completion.</p>
-					<a href="mailto:sara@northcollective.ca" class="hero-btn-1">
-                 CONTACT SARA
-             </a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-  <!-- =========================
-       CONTACT SECTION
-  ========================== -->
-  <section class="contact-section">
-    <div class="px-5">
-
-      <div class="row g-4">
-
-        <div class="col-md-6">
-          <div class="contact-box">
-            <h4>North Collective</h4>
-            <p>          
-Source. Build. Grow.
-</p>
-<p>Integrated Solutions For Commercial Projects & Hospitality</p>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="contact-box">
-            <div class="footer-links">
-              <h4>Quick Links</h4>
-              <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#industries">Industries</a></li>
-                <li><a href="#suppliers">Supplier Partners</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
+            <div class="py-3">
+                <h2 class="text-white pe-5">
+                    A DIFFERENT APPROACH TO PROJECT DELIVERY
+                </h2>
             </div>
-          </div>
+
         </div>
 
-        <div class="col-md-3">
-            <div class="contact-box">
-              <h4>Contact Us</h4>
-          
-              <div class="company-info">
-                <strong>North Collective</strong>
-                <p>
-                  Vancouver, British Columbia<br>
-                  Canada
-                </p>
-              </div>
-              <div>
-                <strong>Leith MacRobert</strong>
-              </br>
-                  <i class="fa-solid fa-phone"></i>
-                  <a href="tel:+16049282424">+1 604 928 2424</a><br>
-                  <i class="fa-solid fa-envelope"></i>
-                  <a href="mailto:leith@northcollective.ca">leith@northcollective.ca</a>
-              </div>
-              
-              <div>
-                <strong>Sara Phillips</strong>
-              </br>
-                  <i class="fa-solid fa-phone"></i>
-                  <a href="tel:+16045375967">+1 604 537 5967</a><br>
-                  <i class="fa-solid fa-envelope"></i>
-                  <a href="mailto:sara@northcollective.ca">sara@northcollective.ca</a>
-              </div>
+        <!-- Right Column -->
+        <div class="col-lg-8  about-page-header">
+
+            <p class="text-white">
+                North Collective was created around a simple belief: successful
+                projects require more than products. They require the right
+                relationships, the right strategy, and the right execution.
+<br>
+                Our role is to help clients source smarter, build better, and
+                grow stronger by providing access to trusted suppliers,
+                experienced project resources, and practical solutions that
+                create long-term value.
+            </p>
+
+            <h5 class="text-white">
+                TRANSPARENT PROCUREMENT. TRUSTED PARTNERSHIPS.
+            </h5>
+
+            <p class="text-white">
+                At North Collective, we believe successful projects are built
+                on trust, transparency and long-term relationships. We work
+                collaboratively with a carefully selected network of preferred
+                vendors and manufacturing partners, delivering value-driven
+                solutions while maintaining flexibility and objectivity.
+
+                Integrity is at the core of everything we do. We believe
+                clients deserve clear communication, transparent pricing and
+                honest recommendations that support the best interests of every
+                project.
+
+                By combining procurement expertise with strategic supplier
+                relationships and a commitment to accountability, North
+                Collective provides a procurement process that is
+                straightforward, transparent and focused on delivering
+                measurable value.
+            </p>
+
         </div>
 
-      </div>
     </div>
-  </section>
 
+</div>
+      <div class="container-fluid hero-container position-relative pt-5">
+    <div class="row border-top border-secondary pt-5">
 
-  <!-- =========================
-       FOOTER
-  ========================== -->
-  <footer class="main-footer">
-    <div class="px-5 text-center">
-      <h5>
-        &copy; 2026 North Collective. All Rights Reserved.
-      </h5>
+        <!-- Profile 1 -->
+        <div class="col-lg-6 pe-lg-5 mb-5 mb-lg-0">
+
+            <h5 class="bronze-text mb-2">
+                LEADERSHIP
+            </h5>
+
+            <h3 class="text-white mb-4">
+                Leith MacRobert
+            </h3>
+
+            <p class="text-white borderline">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <p class="text-white borderline">
+
+            </p>
+
+        </div>
+
+        <!-- Profile 2 -->
+        <div class="col-lg-6 ps-lg-5 border-lg-start">
+
+            <h5 class="bronze-text mb-2">
+                LEADERSHIP
+            </h5>
+
+            <h3 class="text-white mb-4">
+                Sara Phillips
+            </h3>
+
+            <p class="text-white borderline">
+Sara began her career in the hospitality and construction supply industry at a young age, working in her family’s millwork company. She later expanded her expertise into hospitality finishes such as furniture, flooring and concrete tiles, developing a comprehensive understanding of interior finishes and procurement. With more than two decades of industry experience, Sara brings extensive knowledge in finishes, vendor coordination, supplier relationships, and project sourcing, helping clients navigate the procurement process with confidence and efficiency.
+            </p>
+
+        </div>
+
     </div>
-  </footer>
+</div>
+
+</section>
+      
 
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
+      <!-- =========================
+         CONTACT SECTION
+         ========================== -->
+      <section class="contact-section">
+         <div class="px-5">
+            <div class="row g-4">
+               <div class="col-md-6">
+                  <div class="contact-box">
+                                      <img
+                     class="footer-logo"
+                     src="src/NC-IconLogo-Black.svg"
+                     alt="North Collective Logo"
+                  />
+                                       <br>
+                     <h5>North Collective</h5>
+                     <p>Source. Build. Grow.</p>
+                     <p>
+                        Integrated Solutions For Commercial Projects &
+                        Hospitality
+                     </p>
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="contact-box">
+                     <div class="footer-links">
+                        <h5>Quick Links</h5>
+                        <ul>
+                           <li><a href="#about">About</a></li>
+                           <li><a href="#services">Services</a></li>
+                           <li><a href="#industries">Industries</a></li>
+                           <li><a href="#suppliers">Supplier Partners</a></li>
+                           <li><a href="#contact">Contact</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="contact-box">
+                     <h5>Contact Us</h5>
+                     <div class="company-info">
+                        <strong>North Collective</strong>
+                        <p>
+                           Vancouver, British Columbia<br />
+                           Canada
+                        </p>
+                     </div>
+                     <div>
+                        <strong>Leith MacRobert</strong>
+                        <br />
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+16049282424">+1 604 928 2424</a><br />
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:leith@northcollective.ca"
+                           >leith@northcollective.ca</a
+                        >
+                     </div>
+                     <br>
+                     <div>
+                        <strong>Sara Phillips</strong>
+                        <br />
+                        <i class="fa-solid fa-phone"></i>
+                        <a href="tel:+16045375967">+1 604 537 5967</a><br />
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="mailto:sara@northcollective.ca"
+                           >sara@northcollective.ca</a
+                        >
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- =========================
+         FOOTER
+         ========================== -->
+      <footer class="main-footer">
+         <div class="px-5 text-center">
+                 <hr class="section-divider-footer">
+            <p>&copy; 2026 North Collective. All Rights Reserved.</p>
+         </div>
+      </footer>
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+   </body>
 </html>

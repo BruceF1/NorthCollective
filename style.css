@@ -5,7 +5,7 @@
 	--white: #fefefe;
 	--charcoal: #121212;
 	--bronze: #cc973b;
-	--bronze-light: #bba392;
+--bronze-light: #ddb05d;
 	--border-light: #eee;
 	--grey: #808080;
 }
@@ -74,6 +74,15 @@ h4 {
   border-left: 1px solid rgba(255, 255, 255, 1);
 }
 
+.borderline-right {
+  border-right: 1px solid rgba(255, 255, 255, 1);
+}
+
+.borderline-black {
+  padding-left: 22px;
+  border-left: 1px solid rgb(8, 8, 8);
+}
+
 .image-wrapper{
     position:relative;
     display:inline-block;
@@ -88,6 +97,10 @@ h4 {
     padding:2px 6px;
     font-size:.6rem;
     letter-spacing:.08em;
+}
+
+li {
+  font-weight: 300;
 }
 
 /* =========================HEADER========================= */
@@ -116,6 +129,15 @@ h4 {
     -webkit-backdrop-filter: blur(8px);
 }
 
+.alt-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: var(--charcoal)
+}
+
 .nav-link {
 	position: relative;
 	font-weight: 300;
@@ -133,6 +155,11 @@ h4 {
 	;
 	transition: width 0.3s ease;
 }
+
+.navbar.navbar-expand-lg.w-100-dark {
+  background-color: var(--charcoal);
+}
+
 .nav-hover:hover::after {
 	width: 100%;
 }
@@ -219,6 +246,12 @@ display: inline-block;
 	background: var(--charcoal);
 	color: var(--white);
 }
+.about-page-header{
+  margin-top: 20%;
+  max-width: 988px;
+  margin-bottom: 100px;
+}
+
 .about-content {
 	padding: 40px;
 }
@@ -236,6 +269,10 @@ display: inline-block;
 	background-position: center;
 	display: flex;
 	align-items: center;
+}
+
+.about-page-padding{
+	margin-top: 40px;
 }
 
 /* =========================TNEW REASONINGS SECTION========================= */
@@ -280,6 +317,12 @@ display: inline-block;
 
 .section-divider{
     margin:5rem 0;
+    border:0;
+    border-top:1px solid rgba(0,0,0,1);
+}
+
+.section-divider-footer{
+
     border:0;
     border-top:1px solid rgba(0,0,0,1);
 }
@@ -511,11 +554,11 @@ max-width: 300px;
 }
 /* =========================CONTACT========================= */
 .contact-section {
-	background: var (--secondary-bg);
+	background: var(--secondary-bg);
 }
 .contact-box {
 	padding: 30px;
-	background: var(--white);
+	background: var(--secondary-bg);
 	height: 100%;
 	border-radius: 10px;
 }
@@ -553,10 +596,17 @@ max-width: 300px;
 .footer-contact a:hover {
 	color: var (--bronze-light)
 }
+
+.footer-logo {
+  height: 171px;
+  width: auto;
+  display: block;
+  padding-bottom: 11px;
+}
 /* =========================FOOTER========================= */
 .main-footer {
-	background: var(--primary-bg);
-	color: var(--bronze);
+	background: var(--secondary-bg);
+	color: var(--charcoal);
 	padding: 30px 0;
 }
 .main-footer p {
