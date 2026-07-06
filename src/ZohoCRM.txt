@@ -1,0 +1,20 @@
+Hi Gabriel,
+
+Thank you for scheduling time with us next Tuesday. I wanted to provide some background on our business and outline the scope of what we're looking to achieve with Zoho so you have a better understanding prior to our meeting.
+
+North Collective is a commercial procurement, estimating, supplier representation, and project support company serving the hospitality, restaurant, retirement living, and commercial development sectors. Because our business manages multiple products and suppliers within a single project, our CRM needs are a little more advanced than a standard sales pipeline.
+
+Some of the key functionality we are looking for includes:
+
+    Quoting: The ability to create professional quotes that allow us to include product images, specifications, pricing, and supporting information. In many cases, we'll be using information from supplier quotations and incorporating it into our own branded proposal.
+    Workflow Automation: Once a quote is approved, we would like it to seamlessly convert into a Sales Order and then generate individual Purchase Orders for each supplier involved in the project.
+    Project Pipeline Management: We would like to manage projects through a hierarchical pipeline. For example, one main project (Hotel ABC) would contain multiple sub-projects or workstreams such as lighting, furniture, flooring, millwork, artwork, signage, etc. Each of these needs its own status, supplier information, tasks, purchase orders, and delivery tracking while remaining connected to the overall project. I would also like to see auto mated emails going out to our suppliers for project updates.
+    Task & Reminder Management: We need automated reminders, follow-ups, milestones, and task assignments to help manage each stage of the procurement and project lifecycle.
+
+Because of the complexity of our workflow, my colleague Bruce will also be joining us throughout the implementation process to assist with designing and configuring the system. So if you could also include him on the link.
+
+We are looking forward to discussing the best way to structure Zoho so it supports our business both today and as we continue to grow.
+
+Thanks again, and we'll see you next Tuesday.
+
+Kind Regards,

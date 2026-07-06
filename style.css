@@ -10,7 +10,7 @@
 	--grey: #808080;
 }
 body {
-	font-family: Roboto, sans-serif;
+	font-family: "Open Sans", sans-serif;
 	color: var(--charcoal);
 	line-height: 1.6;
 }
@@ -18,21 +18,49 @@ section {
 	padding: 100px 0;
 }
 a {
-    color: #000000;
+	color:#171717;
     text-decoration: none;
 }
 
+.h2-lineheight-fix
+{
+	line-height: 0.85;
+}
+
+em {
+  color:#BAC7D0;
+  font-weight: bolder;
+  font-size: 24px;
+}
+
 p {
+	color:#171717;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
+	letter-spacing: −1px; 
 	line-height:1.2 ;
 }
 
+h1 {
+  color:#171717;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 72px;
+  font-weight: 600;
+  letter-spacing: -7px;
+  line-height: 58px;
+}
+
 h2 {
+	color:#171717;
+	font-family: "Josefin Sans", sans-serif;
 	font-size:3rem;
 	font-weight:500;
 	letter-spacing:-1px;
 }
 h4 {
-	font-weight:600;
+	color:#171717;
+	font-family: "Josefin Sans", sans-serif;
+	font-weight:400;
 }
 .section-heading {
 	margin-bottom: 60px;
@@ -40,11 +68,34 @@ h4 {
 .bronze-text {
 	color: var(--bronze);
 }
+
+.borderline {
+  padding-left: 22px;
+  border-left: 1px solid rgba(255, 255, 255, 1);
+}
+
+.image-wrapper{
+    position:relative;
+    display:inline-block;
+}
+
+.photo-credit{
+    position:absolute;
+    bottom:12px;
+    right:12px;
+    background:rgb(24, 24, 24);
+	color:white;
+    padding:2px 6px;
+    font-size:.6rem;
+    letter-spacing:.08em;
+}
+
 /* =========================HEADER========================= */
 .site-logo {
-	height: 72px;
+	height: 52px;
 	width: auto;
 	display: block;
+	margin-left: 20px;
 }
 .logo-mobile {
 	display: none;
@@ -54,16 +105,22 @@ h4 {
 	padding-right: 2%;
 }
 .main-header {
-	height: 95px;
-	display: flex;
-	align-items: center;
-	background: var(--white);
-	border-bottom: 1px solid var(--border-light);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
+
 .nav-link {
 	position: relative;
-	font-weight: 500;
+	font-weight: 300;
 	color: var(--charcoal);
+	font-size: 12px;
 }
 .nav-hover::after {
 	content: "";
@@ -71,7 +128,7 @@ h4 {
 	left: 0;
 	bottom: 5px;
 	width: 0%;
-	height: 4px;
+	height: 1px;
 	background: var(--bronze);
 	;
 	transition: width 0.3s ease;
@@ -82,8 +139,8 @@ h4 {
 /* =========================HERO SECTION========================= */
 .hero-section {
 	position: relative;
-	/* background-color: var(--primary-bg); */
-	background-image: url('src/reception2.jpg');
+	background-color: var(--secondary-bg);
+	 background-image: url('src/herobg.jpg'); 
 	
 	background-size: cover;
 	background-position: center;
@@ -91,7 +148,7 @@ h4 {
 	display: flex;
 	align-items: center;
 }
- .hero-overlay {
+ /* .hero-overlay {
 	position: absolute;
 	inset: 0;
 background: linear-gradient(
@@ -99,18 +156,22 @@ background: linear-gradient(
 		rgba(0,0,0,1) 0%,
 		rgba(0,0,0,0) 100%
 	);
-}
+} */
 
 .min-vh-75 {
 	min-height: 75vh;
 }
 .hero-content {
-	position: relative;
-	z-index: 2;
-	color: var(--white);
-	overflow-wrap: break-word;
-	padding: 20px;
-	padding-bottom: 30px;
+  position: relative;
+  z-index: 2;
+  color: var(--black);
+  overflow-wrap: break-word;
+  padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  padding-bottom: 30px;
+  max-width: 600px;
+  padding-top: 81px;
 }
 .hero-content h2 {
 	font-size: clamp(2rem, 5vw, 4rem);
@@ -123,13 +184,16 @@ background: linear-gradient(
 }
 /* BUTTON BASE */
 .hero-btn-1,.hero-btn-2,.hero-btn-3 {
-	display: inline-block;
-	color: var(--white);
-	background-color: var(--bronze);
-	font-weight:600;
-	padding: 14px 32px;
-	transition: all 0.3s ease;
-	text-decoration: none;
+display: inline-block;
+  color: var(--bronze);
+  /* background-color: var(--bronze); */
+  font-weight: 600;
+  padding: 14px 32px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--bronze);
 }
 .nav-contact-btn{
 	display: inline-block;
@@ -152,15 +216,15 @@ background: linear-gradient(
 }
 /* =========================TWO COLUMN SECTION========================= */
 .two-column-section {
-	background: var(--primary-bg);
+	background: var(--charcoal);
 	color: var(--white);
 }
 .about-content {
-	padding: 20px;
+	padding: 40px;
 }
 .about-content h2 {
 	font-size: clamp(2rem, 4vw, 3rem);
-	line-height:0.5;
+	line-height:0.55;
 	margin-bottom: 15px;
 }
 .about-summary {
@@ -173,6 +237,75 @@ background: linear-gradient(
 	display: flex;
 	align-items: center;
 }
+
+/* =========================TNEW REASONINGS SECTION========================= */
+.new-reasoning-section {
+	background: var(--white);
+	color: var(--charcoal);
+}
+.new-reasoning-content {
+	padding: 20px;
+}
+.new-reasoning-content h2 {
+	font-size: clamp(2rem, 4vw, 3rem);
+	line-height:0.5;
+	margin-bottom: 15px;
+}
+.new-reasoning-summary {
+	position: relative;
+	background-image: url('src/meetingimage.jpg');
+	
+	background-color: gray;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+}
+
+/* ==========================================
+   WHY NORTH COLLECTIVE
+========================================== */
+
+.new-reasoning-section{
+    background: var(--secondary-bg);
+    padding-top:120px;
+    padding-bottom:120px;
+}
+
+.why-image{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+}
+
+.section-divider{
+    margin:5rem 0;
+    border:0;
+    border-top:1px solid rgba(0,0,0,1);
+}
+
+.reason-card{
+    height:100%;
+    padding-left:2rem;
+    border-left:1px solid rgba(0,0,0,.15);
+}
+
+.reason-card h6{
+    font-weight:600;
+    letter-spacing:.08em;
+    margin-bottom:1rem;
+}
+
+.reason-card p{
+    margin-bottom:0;
+    color:var(--charcoal);
+    line-height:1.2;
+}
+
+
+
+
+
 /* =========================REASONINGS========================= */
 .reasonings-section {
 	background: var (--white);
@@ -180,11 +313,10 @@ background: linear-gradient(
 .reason-card {
 	padding: 40px 25px;
 	background: var (--white);
-	border-radius: 10px;
 	height: 100%;
 }
 .reason-card i {
-	font-size: 3rem;
+	font-size: 2rem;
 	margin-bottom: 20px;
 }
 /*additions*/
@@ -246,6 +378,44 @@ background: linear-gradient(
 	}
 }
 /* =========================SERVICES SECTION========================= */
+.beyond-procurement{
+    max-width:500px;
+    text-align:left;
+}
+
+.border {
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--secondary-bg);
+  padding: 60px;
+}
+
+.section-divider-white{
+
+    border:0;
+    border-top:1px solid rgb(255, 255, 255);
+}
+
+
+
+.beyond-procurement .lead{
+    font-size:1.2rem;
+    line-height:1.8;
+    font-weight:300;
+}
+
+.support-services{
+    margin-top:2rem;
+    color:rgba(255,255,255,.7);
+    line-height:2;
+    font-size:.95rem;
+}
+
+
+.services-list {
+max-width: 300px;
+}
+
 .service-section {
 	background: var(--primary-bg);
 	color: var (--white);
@@ -395,9 +565,11 @@ background: linear-gradient(
 
 /* =========================RESPONSIVE========================= */
 @media (max-width: 991px) {
-	.hero-content h1 {
-		font-size: 2.8rem;
-	}
+ .hero-content h1 {
+    font-size: 2.2rem;
+    line-height: 30px;
+	letter-spacing: -0.1em;
+  }
 	.main-header {
 		height: auto;
 		padding: 15px 0;
