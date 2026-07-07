@@ -163,6 +163,30 @@ li {
 .nav-hover:hover::after {
 	width: 100%;
 }
+
+.navbar-collapse {
+  flex-grow: 1;
+  flex-basis: 100%;
+  align-items: center;
+  padding: 20px;
+}
+
+.navbar-toggler {
+    border: 0;
+    box-shadow: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) saturate(100%);
+}
+
+.navbar-toggler:active .navbar-toggler-icon {
+    opacity: .5;
+}
 /* =========================HERO SECTION========================= */
 .hero-section {
 	position: relative;
@@ -629,6 +653,7 @@ max-width: 300px;
 		padding: 15px 0;
 		width:100%;
 	}
+	
 }
 @media (max-width: 768px) {
 	section {
