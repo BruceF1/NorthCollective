@@ -71,16 +71,16 @@ h4 {
 
 .borderline {
   padding-left: 22px;
-  border-left: 1px solid rgba(255, 255, 255, 1);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .borderline-right {
-  border-right: 1px solid rgba(255, 255, 255, 1);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .borderline-black {
   padding-left: 22px;
-  border-left: 1px solid rgb(8, 8, 8);
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .image-wrapper{
