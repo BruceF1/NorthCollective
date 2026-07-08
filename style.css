@@ -38,22 +38,30 @@ p {
 	font-family: "Open Sans", sans-serif;
 	font-weight: 300;
 	letter-spacing: −1px; 
-	line-height:1.2 ;
+	line-height:1.4 ;
 }
 
 h1 {
   color:#171717;
   font-family: "Josefin Sans", sans-serif;
-  font-size: 72px;
+ 
+  font-size:clamp(2.3rem,6vw,4.5rem);
+
+line-height:.95;
+
+letter-spacing:-.05em;
   font-weight: 600;
+   /* font-size: 72px;
   letter-spacing: -7px;
-  line-height: 58px;
+  line-height: 58px; */
 }
 
 h2 {
 	color:#171717;
 	font-family: "Josefin Sans", sans-serif;
-	font-size:3rem;
+font-size:clamp(2rem,4vw,3rem);
+
+line-height:.95;
 	font-weight:500;
 	letter-spacing:-1px;
 }
@@ -230,21 +238,46 @@ li {
   padding: 20px;
 }
 
-.navbar-toggler {
-    border: 0;
-    box-shadow: none;
+.navbar-toggler-icon{
+    display:none;
 }
 
-.navbar-toggler:focus {
-    box-shadow: none;
+.navbar-toggler{
+	padding-right:20px;
+    border:0;
+    box-shadow:none;
+    color:white;
+    font-size:1.6rem;
+    transition:.25s;
+	background-color: transparent;
 }
 
-.navbar-toggler-icon {
-    filter: brightness(0) saturate(100%);
+.navbar-toggler-black{
+	padding-right:20px;
+    border:0;
+    box-shadow:none;
+    color:rgb(0, 0, 0);
+    font-size:1.6rem;
+    transition:.25s;
+	background-color: transparent;
 }
 
-.navbar-toggler:active .navbar-toggler-icon {
-    opacity: .5;
+.navbar-toggler:hover{
+    color:var(--bronze);
+}
+
+.navbar-toggler-black:hover{
+    color:var(--bronze);
+}
+
+.navbar-toggler:focus{
+    box-shadow:none;
+	color:var(--bronze);
+}
+
+.navbar-toggler:active{
+    opacity:.6;
+	color:var(--bronze);
 }
 /* =========================HERO SECTION========================= */
 .hero-section {
@@ -324,6 +357,8 @@ display: inline-block;
 	background-color: var(--bronze-light);
 	font-weight:600;
 }
+
+
 /* =========================TWO COLUMN SECTION========================= */
 .two-column-section {
 	background: var(--charcoal);
@@ -356,6 +391,8 @@ display: inline-block;
 
 .about-page-padding{
 	margin-top: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 /* =========================NEW REASONINGS SECTION========================= */
@@ -387,6 +424,10 @@ display: inline-block;
 ========================================== */
 .narrow-column{
 	max-width:600px;
+}
+
+.why-content {
+	padding: 20px;
 }
 
 
@@ -603,6 +644,10 @@ max-width: 300px;
 	}
 }
 /* =========================PRODUCT CATEGORIES SECTION========================= */
+.product-content {
+	padding:20px;
+}
+
 .product-categories-section {
 	background: var(--secondary-bg);
 	color: var(--primary-bg);
@@ -719,11 +764,16 @@ max-width: 300px;
 		padding: 70px 0;
 	}
 	.hero-section {
-		min-height: 600px;
+		/* min-height: 600px; */
 	}
 	.hero-content h1 {
 		font-size: 2.2rem;
 	}
+
+.about-content h2{
+        line-height:.95;
+    }
+
 	.site-logo {
 		display: none;
 	}
@@ -733,4 +783,12 @@ max-width: 300px;
 		width: auto;
 		padding-left:20px;
 	}
+
+	@media (min-width:992px){
+
+    .navbar-toggler-black{
+        display:none;
+    }
+
+}
 }

@@ -36,7 +36,7 @@
          <div class="container-fluid header-container">
             <nav class="navbar navbar-expand-lg w-100">
                <!-- Logo -->
-               <a class="navbar-brand logo" href="#">
+               <a class="navbar-brand logo" href="index.html">
                   <img
                      class="site-logo"
                      src="src/NC-landscapelogo.svg"
@@ -50,12 +50,16 @@
                </a>
                <!-- Mobile Toggle -->
                <button
-                  class="navbar-toggler"
+                  class="navbar-toggler navbar-toggler-black"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#mainNav"
-               >
-                  <span class="navbar-toggler-icon"></span>
+                  aria-controls="mainNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation">
+
+                  <i class="fa-solid fa-bars"></i>
+
                </button>
                <!-- Navigation -->
                <div class="collapse navbar-collapse" id="mainNav">
@@ -201,7 +205,7 @@
      WHY NORTH COLLECTIVE
      ========================== -->
       <section class="new-reasoning-section py-5">
-         <div class="container-fluid hero-container">
+         <div class="container-fluid hero-container why-content">
             <!-- Top Row -->
             <div class="row align-items-center gy-5">
                <!-- Left Content -->
@@ -210,17 +214,14 @@
                      WHY NORTH COLLECTIVE?
                   </h5>
 
-                  <h2 class="h2-lineheight-fix text-uppercase">
-                     Successful projects are built on more than transactions. They're built on trusted relationships.
+                  <h2 >
+                     SUCESSFUL PROJECTS ARE BUILT ON MORE THAN TRANSACTIONS. THEY'RE BUILT ON TRUSTED RELATIONSHIPS.
                   </h2>
 
-                  <p>
+                  <p class=" borderline-black">
                      A procurement company finds products. A trusted project
-                     partner understands the bigger picture.
-                  </p>
-
-                  <p>
-                     North Collective combines industry experience, supplier
+                     partner understands the bigger picture.<br>
+                       North Collective combines industry experience, supplier
                      relationships and practical project knowledge to help
                      clients navigate complexity and achieve better outcomes.
                   </p>
@@ -396,7 +397,7 @@
 
                <!-- RIGHT -->
                <div class="col-lg-4 d-flex align-items-center">
-                  <div class="beyond-procurement borderline">
+                  <div class="mx-4 beyond-procurement borderline">
                      <div>
                         <h6 class="text-white mb-4">
                            <i class="fa-solid fa-rocket bronze-text"></i> BEYOND
@@ -426,24 +427,26 @@
                   </div>
                </div>
 
-               <div class="col-lg-4 borderline px-3">
-                  <h6 class="text-white mb-3">
-                     <i class="fa-solid fa-industry bronze-text"></i> INDUSTRIES
-                     WE SERVE
-                  </h6>
+               <div class="col-lg-4">
+    <div class="mx-4 borderline">
+        <h6 class="text-white mb-3">
+            <i class="fa-solid fa-industry bronze-text"></i>
+            INDUSTRIES WE SERVE
+        </h6>
 
-                  <hr class="section-divider-white" />
+        <hr class="section-divider-white">
 
-                  <p class="text-white">
-                     North Collective supports commercial and hospitality
+        <p class="text-white">
+                      North Collective supports commercial and hospitality
                      projects across hotels, restaurants, retail, commercial
                      office developments, retirement living, institutional facilities and
                      Indigenous developments. Working alongside owners,
                      developers, architects and project teams, we tailor
                      procurement solutions to the unique requirements of every
                      project.
-                  </p>
-               </div>
+        </p>
+    </div>
+</div>
                <hr class="section-divider-white" />
             </div>
          </div>
@@ -453,7 +456,7 @@
      PRODUCTS
      ========================== -->
       <section id="products" class="new-reasoning-section py-5">
-         <div class="container-fluid hero-container">
+         <div class="container-fluid hero-container product-content">
             <!-- Top Row -->
             <div class="row align-items-center gy-5">
                <!-- Left Content -->
