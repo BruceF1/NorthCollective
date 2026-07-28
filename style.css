@@ -396,10 +396,14 @@ display: inline-block;
 }
 
 /* =========================NEW REASONINGS SECTION========================= */
-.new-reasoning-section {
-	background: var(--white);
+
+.new-reasoning-section{
+    background: var(--secondary-bg);
+    padding-top:120px;
+    padding-bottom:120px;
 	color: var(--charcoal);
 }
+
 .new-reasoning-content {
 	padding: 20px;
 }
@@ -427,15 +431,11 @@ display: inline-block;
 }
 
 .why-content {
-	padding: 20px;
+	padding: 2%;
 }
 
 
-.new-reasoning-section{
-    background: var(--secondary-bg);
-    padding-top:120px;
-    padding-bottom:120px;
-}
+
 
 .why-image{
     width:100%;
@@ -455,8 +455,19 @@ display: inline-block;
     border-top:1px solid rgba(0,0,0,1);
 }
 
+/* =========================REASONINGS========================= */
+.reasonings-section {
+	background: var(--white);
+}
+
+.reason-card i {
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+
 .reason-card{
     height:100%;
+	padding: 40px 25px;
     padding-left:2rem;
     border-left:1px solid rgba(0,0,0,.15);
 }
@@ -473,23 +484,6 @@ display: inline-block;
     line-height:1.2;
 }
 
-
-
-
-
-/* =========================REASONINGS========================= */
-.reasonings-section {
-	background: var (--white);
-}
-.reason-card {
-	padding: 40px 25px;
-	background: var (--white);
-	height: 100%;
-}
-.reason-card i {
-	font-size: 2rem;
-	margin-bottom: 20px;
-}
 /*additions*/
 /* REASONINGS ROW */
 .REASONINGS-row {
@@ -502,7 +496,7 @@ display: inline-block;
 	flex: 1;
 	text-align: center;
 	padding: 0 25px;
-	border-right: 1px solid var (--white);
+	border-right: 1px solid var(--white);
 }
 .reason-image {
 	padding-bottom: 10px;
@@ -543,6 +537,7 @@ display: inline-block;
 		margin-bottom: 40px;
 	}
 }
+
 @media (max-width: 576px) {
 	.reason-item {
 		flex: 0 0 100%;
@@ -612,7 +607,7 @@ max-width: 300px;
 
 .service-section {
 	background: var(--primary-bg);
-	color: var (--white);
+	color: var(--white);
 	/* padding: 80px 0;
 	*/
 }
@@ -668,7 +663,7 @@ max-width: 300px;
 }
 /* =========================PRODUCT CATEGORIES SECTION========================= */
 .product-content {
-	padding:20px;
+	padding:2%;
 }
 
 .product-categories-section {
@@ -786,9 +781,8 @@ max-width: 300px;
 	section {
 		padding: 70px 0;
 	}
-	.hero-section {
-		/* min-height: 600px; */
-	}
+}
+
 	.hero-content h1 {
 		font-size: 2.2rem;
 	}
@@ -814,4 +808,62 @@ max-width: 300px;
     }
 
 }
+
+/* =========================Animations========================= */
+.fade-in {
+    opacity: 0;
+    animation: fadeUp 2s ease-out forwards;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.slide-on {
+    opacity: 0;
+    animation: slideInRight 1s ease forwards;
+    animation-delay: .4s;
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.slide-on2 {
+    opacity: 0;
+    animation: slideInLeft 0.5s ease forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.delay2 {
+	animation-delay:0.4s;
+}
+
+.delay3 {
+	animation-delay:0.6s;
 }
